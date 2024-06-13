@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-image: url(./photorealistic-style-clouds_23-2151058989.png);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Общие правила для всей погоды */
+.weather{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* Правила для поля ввода и вывода первых данных */
+.weatherNowSubmit{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    max-width: 1140px;
+}
+.weatherNowSubmit .request{
+    margin: auto;
+}
+.weatherNowSubmit .weatherNow{
+    width: 20%;
+    display: none;
+    border: 1px solid rgba(0, 140, 255, 0.753);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 140, 255, 0.753);
+}
+.weatherNowSubmit .weatherNow div{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+/* Правила для вывода остальных данных */
+.postRequestWeather{
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    overflow: auto;
+    max-width: 1140px;
+    border: 1px solid rgba(234, 242, 248, 0.753);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(234, 242, 248, 0.753);
+}
+.postRequestWeather div{
+    display: block;
+    border: 1px solid rgba(0, 140, 255, 0.753);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 140, 255, 0.753);
+}
+
+
+/* новости */
+
+/* общий правила */
+.allNews{
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 1140px;
+    height: 308px;
+    margin: auto;
+    overflow: auto;
+    background-color: rgba(230, 235, 240, 0.719);
+    border: 1px solid rgba(0, 140, 255, 0.753);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 140, 255, 0.753);
+}
+.oneNews{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 140, 255, 0.753);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 140, 255, 0.753);
+}
+.newsData{
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+.urlNews{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.rek{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+
+
+.footor{
+    height: 100px;
+}
+
