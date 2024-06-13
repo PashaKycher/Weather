@@ -90,7 +90,7 @@ function weatherData() {
 		alert('The entered value is not valid')
 	}
 
-	let urlCoordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=c6f3ca7cba0e64850fbadcde5f144ad1`
+	let urlCoordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=c6f3ca7cba0e64850fbadcde5f144ad1`
 
 	fetch(urlCoordinates)
 		.then(response => response.json())
@@ -99,7 +99,7 @@ function weatherData() {
 			// имя страны
 			let country = json[0].country
 			// запрос на получение погоды
-			let url = `http://api.openweathermap.org/data/2.5/forecast?lat=${json[0].lat}&lon=${json[0].lon}&appid=c6f3ca7cba0e64850fbadcde5f144ad1`
+			let url = `https://api.openweathermap.org/data/2.5/forecast?lat=${json[0].lat}&lon=${json[0].lon}&appid=c6f3ca7cba0e64850fbadcde5f144ad1`
 
 			fetch(url)
 				.then(response => response.json())
